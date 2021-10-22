@@ -9,7 +9,7 @@ class DishController extends Controller
 
         if (!empty($_POST)) {
 
-            $action = $_POST['type'] ?? 'create';
+            $action = $_POST['action'] ?? 'create';
 
             if ($action == 'delete') {
                 $dishId = $_POST['id'] ?? '';

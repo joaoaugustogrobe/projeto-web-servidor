@@ -1,0 +1,12 @@
+João Augusto Grobe Castilho - 2007282
+
+Primeira parte do projeto de desenvolvimento Web-Servidor.
+Projeto para visualização e controle de cardapio do RU, 
+onde alunos podem acessar e ver o cardapio do dia, e administradores
+realizam a inclusão do cardapio.
+
+- Bugs conhecidos:
+    - UI feita para mobile, interface quebra na resolução Web
+    - NGINX ou PHP realizando o roteamento errado para requisições PUT e DELETE, por esse motivo o CRUD tem um campo para identificar o tipo `ação` realizada;
+    - Inclusão de Meal necessita de um date selector, será incluso na proxima etapa do projeto;
+    - Diversos inputs com margem para xss;

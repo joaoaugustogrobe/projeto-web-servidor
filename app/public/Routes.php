@@ -8,11 +8,6 @@ Route::set('login', function() {
     LoginController::CreateView('Login', false); 
 });
 
-
-Route::set('admin', function() {
-    AdminController::CreateView('Admin', true); 
-});
-
 Route::set('dish', function() {
     DishController::CreateView('dish', true); 
 });

@@ -67,7 +67,7 @@
       <input type="text" class="form-control" id="url" name="url" value="<?= $isEditing ? $dishEditContext->getUrl() : '' ?>">
     </div>
 
-    <input type="hidden" class="form-control" name="type" value="<?= $isEditing ? 'edit' : 'create' ?>">
+    <input type="hidden" class="form-control" name="action" value="<?= $isEditing ? 'edit' : 'create' ?>">
 
     <button type="submit" class="btn btn-primary"><?= $isEditing ? 'Save' : 'Add' ?></button>
   </form>
@@ -95,7 +95,7 @@
               </button>
               <form method="POST" class="d-inline">
                 <input type="hidden" name='id' value="<?= $dish->getId() ?>">
-                <input type="hidden" name='type' value="delete">
+                <input type="hidden" name='action' value="delete">
                 <button class="btn btn-outline-danger ml-2" type="submit">
                   ❌
                 </button>
